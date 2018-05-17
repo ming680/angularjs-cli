@@ -5,12 +5,14 @@
 ```
 npm install -g angularjs-cli
 ```
+
 ### 属性
-* 生成的项目使用angular1.4.6进行开发；
-* 使用angular-ui-router进行路由配置，文档；
-* 使用ocLazyLoad配合webpack进行懒加载；
+* 生成的项目使用`angular1.4.6`进行开发；
+* 使用`angular-ui-router`进行路由配置，文档；
+* 使用`ocLazyLoa`d配合`webpack`进行懒加载；
 * 打包后可以直接用于生成环境；
 * 支持ES6语法；
+
 ### 使用
 ```
 angularjs new 生成项目文件
@@ -31,6 +33,7 @@ angularjs g|generate m|module 生成一个模块，用于懒加载
 
 angularjs build 打包压缩 生成dist目录
 ```
+
 ### 详解
 
 声明：所有命令中的目录/文件，请使用驼峰写法，将生成非驼峰的文件，和以驼峰命名的变量添加到文件中
@@ -41,7 +44,7 @@ angularjs g c myController
 在`src/app`文件夹下生成一个`my-controller.js`文件，同时添加一个名为`myController`的`controller`；
 
 ```
-angularjs g c controllers/my-controller
+angularjs g c controllers/myController
 ```
 在生成在`src/app/controllers`文件夹下；
 
@@ -57,8 +60,9 @@ angularjs g c module/myModule/myController
 
 
 在`src/app/app-router.js中`配置路由，如懒加载模块，按照中文件中注释的引入方式配置即可；
+
 ### 规划
-* 未来将会对此脚手架升级到最新版angularJs；
-* 支持component；
-* 优化webpack配置；
-* 提供配置文件angularjs-cli.json;
+* 未来将会对此脚手架升级到最新版`angularJs`；
+* 支持`component`；
+* 优化`webpack`配置；
+* 提供配置文件`angularjs-cli.json`;
