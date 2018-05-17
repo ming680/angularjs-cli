@@ -24,7 +24,7 @@ angularjs build 打包压缩 生成dist目录
 ```
 angularjs g c myController
 ```
-会在`src/app`文件夹下生成一个`my-controller.js`文件，同时添加一个名为`myController`的`controller`；
+在`src/app`文件夹下生成一个`my-controller.js`文件，同时添加一个名为`myController`的`controller`；
 
 ```
 angularjs g c controllers/my-controller
