@@ -1,6 +1,6 @@
 ## AngularJS-CLI
 
-![npm](https://img.shields.io/npm/v/cli-angularjs.svg?style=flat)
+[![npm](https://img.shields.io/npm/v/cli-angularjs.svg?style=flat)](https://www.npmjs.com/package/cli-angularjs?activeTab=versions)
 
 通过`angularjs-cli`生成基础项目，开发，打包，命令行操作，自动化完成
 
