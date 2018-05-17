@@ -8,13 +8,21 @@ npm install -g angularjs-cli
 ### 使用
 ```
 angularjs new 生成项目文件
+
 angularjs serve 启动开发服务
+
 angularjs g|generate c|controller <name> 生成一个controller
+
 angularjs g|generate d|directive <name> 生成一个directive
+
 angularjs g|generate s|service <name> 生成一个service
+
 angularjs g|generate f|fiter <name> 生成一个filter
+
 angularjs g|generate config <name> 生成一个config
+
 angularjs g|generate m|module 生成一个模块，用于懒加载
+
 angularjs build 打包压缩 生成dist目录
 ```
 ### 详解
