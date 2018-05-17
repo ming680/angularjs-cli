@@ -1,10 +1,16 @@
-## AngularJS-CLI
+##AngularJS-CLI
 通过`angularjs-cli`生成基础项目，开发，打包，命令行操作，自动化完成
 
 ### 安装
 ```
 npm install -g angularjs-cli
 ```
+### 属性
+* 生成的项目使用angular1.4.6进行开发；
+* 使用angular-ui-router进行路由配置，文档；
+* 使用ocLazyLoad配合webpack进行懒加载；
+* 打包后可以直接用于生成环境；
+* 支持ES6语法；
 ### 使用
 ```
 angularjs new 生成项目文件
@@ -51,4 +57,8 @@ angularjs g c module/myModule/myController
 
 
 在`src/app/app-router.js中`配置路由，如懒加载模块，按照中文件中注释的引入方式配置即可；
-
+### 规划
+* 未来将会对此脚手架升级到最新版angularJs；
+* 支持component；
+* 优化webpack配置；
+* 提供配置文件angularjs-cli.json;
