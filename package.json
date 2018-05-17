@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-cli",
+  "name": "cli-anularjs",
   "version": "1.0.0",
   "description": "angularJS 脚手架",
   "main": "index.js",
@@ -9,8 +9,20 @@
   "bin": {
     "angularjs": "./bin/cli.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuMINGzhi9/angularjs-cli.git"
+  },
+  "keywords": [
+    "angularjs-cli",
+    "cli"
+  ],
+  "author": "mingzhi xu",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xuMINGzhi9/angularjs-cli/issues"
+  },
+  "homepage": "https://github.com/xuMINGzhi9/angularjs-cli#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",

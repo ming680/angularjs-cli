@@ -1,10 +1,11 @@
-##AngularJS-CLI
+## AngularJS-CLI
 通过`angularjs-cli`生成基础项目，开发，打包，命令行操作，自动化完成
 
 ### 安装
 ```
-npm install -g angularjs-cli
+npm install -g cli-angularjs
 ```
+由于重名，NPM包的名字是cli-angularjs
 
 ### 属性
 * 生成的项目使用`angular1.4.6`进行开发；
