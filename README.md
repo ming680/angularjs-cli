@@ -1,11 +1,11 @@
-##AngularJS-CLI
+## AngularJS-CLI
 通过`angularjs-cli`生成基础项目，开发，打包，命令行操作，自动化完成
 
-###安装
+### 安装
 ```
 npm install -g angularjs-cli
 ```
-###使用
+### 使用
 ```
 angularjs new 生成项目文件
 angularjs serve 启动开发服务
@@ -17,7 +17,7 @@ angularjs g|generate config <name> 生成一个config
 angularjs g|generate m|module 生成一个模块，用于懒加载
 angularjs build 打包压缩 生成dist目录
 ```
-###详解
+### 详解
 
 声明：所有命令中的目录/文件，请使用驼峰写法，将生成非驼峰的文件，和以驼峰命名的变量添加到文件中
 
