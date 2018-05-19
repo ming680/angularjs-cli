@@ -15,7 +15,7 @@ module.exports = function (file_path) {
     // 要添加到的路径  
     const add_path = rootPathAdd(`src/app/${file_path}/../${file_name}.js`);
     addFile({
-        tpl_file: '../templates/directive/index.js',
+        tpl_file: path.join(__dirname, '../templates/directive/index.js'),
         rep_reg: /rootDirective/g,
         file_path: add_path,
         file_name: file_name,

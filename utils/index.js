@@ -65,7 +65,7 @@ const utils = {
     },
     addModule : (file_path, file_name)=>{
         if (fileCheck(file_path, file_name) == 'err') return;
-        fsExtra.copy('../templates/module', file_path)
+        fsExtra.copy(path.join(__dirname, '../templates/module'), file_path)
         .then(()=>{
             glob.sync(path.join(file_path, '**')).forEach((src) => {
                console.log(chalk.green('create success'), `${src}`)

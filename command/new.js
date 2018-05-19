@@ -4,6 +4,8 @@ const shell = require('shelljs');
 const fsExtra = require('fs-extra');
 const {rootPathAdd} = require('./../utils');
 const ora = require('ora');
+const path = require('path');
+
 module.exports = function(){
     const defaultName = 'angularjs-pro';
     const question = [{
@@ -18,7 +20,7 @@ module.exports = function(){
         const {projectName} = answer;
         const spinner = ora('create template...');
         spinner.start()
-        fsExtra.copy(rootPathAdd('templates/angularjs-pro'), projectName)
+        fsExtra.copy(path.join(__dirname, '../templates/angularjs-pro'), projectName)
         .then(function(){
             spinner.stop()
             shell.cd(projectName);

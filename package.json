@@ -1,13 +1,13 @@
 {
-  "name": "cli-angularjs",
-  "version": "1.0.0",
+  "name": "angular1.x-cli",
+  "version": "1.0.6",
   "description": "angularJS 脚手架",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "angularjs": "./bin/cli.js"
+    "ang": "./bin/cli.js"
   },
   "repository": {
     "type": "git",
@@ -23,13 +23,13 @@
     "url": "https://github.com/xuMINGzhi9/angularjs-cli/issues"
   },
   "homepage": "https://github.com/xuMINGzhi9/angularjs-cli#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
+  "dependencies": {
     "babel-loader": "^7.1.4",
     "babel-plugin-runtime": "^1.0.7",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.7.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
     "chalk": "^2.4.1",
     "clean-webpack-plugin": "^0.1.19",
     "commander": "^2.15.1",
@@ -41,6 +41,7 @@
     "friendly-errors-webpack-plugin": "^1.7.0",
     "fs-extra": "^6.0.1",
     "glob": "^7.1.2",
+    "happypack": "^5.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "inquirer": "^5.2.0",
@@ -54,7 +55,6 @@
     "webpack": "^4.8.3",
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4",
-    "webpack-merge": "^4.1.2",
-    "yargs-parser": "^10.0.0"
+    "webpack-merge": "^4.1.2"
   }
 }

@@ -4,7 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-
+const os = require('os')
+const HappyPack = require('happypack')
+const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
 
 const { rootPathAdd, allFilesWithFilter } = require('../utils');
 const glob = require('glob');
@@ -36,7 +38,18 @@ module.exports = {
                 from: './src/assets',
                 to: './assets'
             }
-        ])
+        ]),
+        new HappyPack({
+            id: 'js',
+            verbose: false,
+            loaders: [
+                {
+                    loader: 'babel-loader',
+                    query: require(path.join(__dirname, '../config/babel.config.js'))
+                }
+            ],
+            threadPool: happyThreadPool
+        })
     ],
     output: {
         filename: is_dev ? '[name].js' : '[name].[chunkhash].js',
@@ -45,7 +58,11 @@ module.exports = {
     resolve: {
         alias: {
             '@': rootPathAdd('src'),
+            modules: [rootPathAdd(), rootPathAdd('node_modules'),path.join(__dirname, '../node_modules')],
         },
+    },
+    resolveLoader: {
+        modules: [path.join(__dirname, '../node_modules')]
     },
     module: {
         rules: [
@@ -70,20 +87,16 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            ['env']
-                        ],
-                        plugins: [
-                            'transform-runtime',
-                            'transform-decorators-legacy'
-                        ]
-                    },
-                }
-            }, {
+                exclude: file => (
+                    /node_modules/.test(file)
+                ),
+                use: [
+                    {
+                        loader: 'happypack/loader?id=js'
+                    }
+                ]
+            },
+            {
                 test: /\.(png|svg|jpg|gif|webp)$/,
                 use: [
                     'file-loader',
