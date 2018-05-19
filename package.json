@@ -1,6 +1,6 @@
 {
   "name": "angular1.x-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "angularJS 脚手架",
   "main": "index.js",
   "scripts": {

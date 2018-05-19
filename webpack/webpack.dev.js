@@ -22,7 +22,7 @@ module.exports = merage.smart(common, {
         open: open, // 是否自动打开浏览器 默认 是
         hot: hot, // 是否启用模块热替换 默认 是  // 需使用 webpack.HotModuleReplacementPlugin
         proxy: proxy, // 代理配置  默认 无
-        // quiet: true
+        quiet: true
     },
     plugins: [
         new FriendlyErrorsPlugin(),
