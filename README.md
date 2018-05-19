@@ -13,7 +13,7 @@ npm install -g angular1.x-cli
 ### 属性
 * 生成的项目使用`angular1.4.6`进行开发；
 * 使用`angular-ui-router`进行路由配置，文档；
-* 使用`ocLazyLoa`d配合`webpack`进行懒加载；
+* 使用`ocLazyLoad`配合`webpack`进行懒加载；
 * 使用`happypack`加快打包速度；
 * 打包后可以直接用于生成环境；
 * 支持ES6语法；
