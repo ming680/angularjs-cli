@@ -15,7 +15,7 @@ const glob = require('glob');
 const is_dev = process.env.NODE_ENV == 'development';
 
 const htmlCol = [];
-
+console.log('common')
 module.exports = {
     entry: {
         index: rootPathAdd('src/main.js'),
@@ -58,8 +58,8 @@ module.exports = {
     resolve: {
         alias: {
             '@': rootPathAdd('src'),
-            modules: [rootPathAdd(), rootPathAdd('node_modules'),path.join(__dirname, '../node_modules')],
         },
+        modules: [rootPathAdd(), rootPathAdd('node_modules'),path.join(__dirname, '../node_modules')],
     },
     resolveLoader: {
         modules: [path.join(__dirname, '../node_modules')]
