@@ -34,7 +34,7 @@ ang g|generate f|fiter <name> 生成一个filter
 
 ang g|generate config <name> 生成一个config
 
-ang g|generate m|module 生成一个模块，用于懒加载
+ang g|generate m|module <name> 生成一个模块，用于懒加载
 
 ang build 打包压缩 生成dist目录
 ```
