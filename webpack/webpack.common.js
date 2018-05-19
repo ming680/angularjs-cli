@@ -15,7 +15,6 @@ const glob = require('glob');
 const is_dev = process.env.NODE_ENV == 'development';
 
 const htmlCol = [];
-console.log('common')
 module.exports = {
     entry: {
         index: rootPathAdd('src/main.js'),
