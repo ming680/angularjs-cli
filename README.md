@@ -17,6 +17,7 @@
 
 * [Introduction](#introduction)
 * [Installation](#installation)
+* [Usage](#usage)
 * [Planning](#planning)
 * [License](#license)
 
