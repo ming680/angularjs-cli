@@ -5,6 +5,7 @@
 [中文文档](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README-zh-cn.md)
 
 ## Introduction
+
 * The generated project is developed with angular1.4.6;
 * Routing configuration using `angular-ui-router`;
 * Lazy loading width `ocLazyload` and `webpack`;

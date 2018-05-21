@@ -5,6 +5,7 @@
 [Engulish](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README.md)
 
 ## 介绍
+
 * 生成的项目使用angular1.4.6进行开发;
 * 使用 `angular-ui-router` 进行路由配置;
 * 使用 `ocLazyload` 配合 `webpack`进行懒加载;
