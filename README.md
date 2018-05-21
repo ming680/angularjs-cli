@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/angular1.x-cli.svg?style=flat)](https://www.npmjs.com/package/angular1.x-cli?activeTab=versions)
 
+[中文文档](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README-zh-cn.md)
+
 ## Introduction
 * The generated project is developed with angular1.4.6;
 * Routing configuration using `angular-ui-router`;
@@ -12,9 +14,10 @@
 
 ## Table of Contents
 
-* [Introduction](#Introduction)
-* [Installation](#Installation)
-* [Planning](#Planning)
+* [Introduction](#introduction)
+* [Installation](#installation)
+* [Planning](#planning)
+* [License](#license)
 
 ## Installation
 
@@ -24,7 +27,7 @@ npm install -g angular1.x-cli
 ## Usage
 
 ```bash
-ng help
+ang help
 ```
 
 ### Generating and serving an AngularJS project via a development server
@@ -57,7 +60,7 @@ angularjs-cli will add reference to `controllers`, `directives`, `services`, `fi
 This should add the new `controllers`, `directives`, `services`, `filters`, and `configs`  reference to the `new-module/config` you've created.
 You need to manually introduce this module to `src/app/app-router.js`.
 If you'll have other files to load with this module,you can introduce those files in `new-module/module-main.js` with `import`.
-In`src/app/app-router.js`,you can configure it  according to the annotations in the file.
+In`src/app/app-router.js`, you can configure it  according to the annotations in the file.
 
 ## Planning
 * Upgrade `angularjs`to the latest edition；
@@ -65,4 +68,6 @@ In`src/app/app-router.js`,you can configure it  according to the annotations in 
 * To make `webpack` reaches the optimization deploy；
 * provide a configuration file named `angularjs-cli.json`;
 
+## License
+MIT
 
