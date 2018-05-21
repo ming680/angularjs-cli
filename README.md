@@ -70,9 +70,9 @@ ang build
 ```
 
 ## Planning
-* Upgrade `angularjs`to the latest edition；
-* Support `component`；
-* To make `webpack` reaches the optimization deploy；
+* Upgrade `angularjs`to the latest edition;
+* Support `component`;
+* To make `webpack` reaches the optimization deploy;
 * provide a configuration file named `angularjs-cli.json`;
 
 ## License
