@@ -62,6 +62,12 @@ You need to manually introduce this module to `src/app/app-router.js`.
 If you'll have other files to load with this module,you can introduce those files in `new-module/module-main.js` with `import`.
 In`src/app/app-router.js`, you can configure it  according to the annotations in the file.
 
+### build
+
+```bash
+ang build
+```
+
 ## Planning
 * Upgrade `angularjs`to the latest edition；
 * Support `component`；

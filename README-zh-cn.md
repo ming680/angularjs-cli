@@ -1,73 +1,76 @@
-## AngularJS-CLI
+## Angular CLI
 
 [![npm](https://img.shields.io/npm/v/angular1.x-cli.svg?style=flat)](https://www.npmjs.com/package/angular1.x-cli?activeTab=versions)
 
-通过`angularjs-cli`生成基础项目，开发，打包，命令行操作，自动化完成；
+[Engulish](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README.md)
 
-### 安装
-```
+## 介绍
+* 生成的项目使用angular1.4.6进行开发;
+* 使用 `angular-ui-router` 进行路由配置;
+* 使用 `ocLazyload` 配合 `webpack`进行懒加载;
+* 使用 `happypack` 加快打包速度;
+* 打包后的文件可以直接用于生产环境;
+* 支持 `ES6`;
+
+## 目录
+
+* [安装](#安装)
+* [使用](#使用)
+* [规划](#规划)
+* [许可证](#许可证)
+
+## 安装
+
+```bash
 npm install -g angular1.x-cli
 ```
-由于重名，NPM包的名字是angular1.x-cli；
+## 使用
 
-### 属性
-* 生成的项目使用`angular1.4.6`进行开发；
-* 使用`angular-ui-router`进行路由配置，文档；
-* 使用`ocLazyLoad`配合`webpack`进行懒加载；
-* 使用`happypack`加快打包速度；
-* 打包后可以直接用于生成环境；
-* 支持ES6语法；
-
-### 使用
-```
-ang new 生成项目文件
-
-ang serve 启动开发服务
-
-ang g|generate c|controller <name> 生成一个controller
-
-ang g|generate d|directive <name> 生成一个directive
-
-ang g|generate s|service <name> 生成一个service
-
-ang g|generate f|fiter <name> 生成一个filter
-
-ang g|generate config <name> 生成一个config
-
-ang g|generate m|module <name> 生成一个模块，用于懒加载
-
-ang build 打包压缩 生成dist目录
+```bash
+ang help
 ```
 
-### 详解
+### 创建项目并启动开发服务
 
-声明：所有命令中的目录/文件，请使用驼峰写法，将生成非驼峰的文件，和以驼峰命名的变量添加到文件中
+```bash
+ang new PROJECT-NAME
+cd PROJECT-NAME
+ang serve
+```
+服务起在 `http://localhost:8080/`。如果你更改了项目的文件，服务会自动更新。
 
-```
-ang g c myController
-```
-在`src/app`文件夹下生成一个`my-controller.js`文件，同时添加一个名为`myController`的`controller`；
+### 生成 Controllers， Directives， Service， Filters ， Configs 以及 Modules
 
-```
-ang g c controllers/myController
-```
-在生成在`src/app/controllers`文件夹下；
+你可以在表中找到所有可能的命令：
 
-```
-ang g m myModule
-```
-在`src/app/module `生成一个`my-module`的模块；
+类别  | 方法
+---       | ---
+Controller | `ang g controller <name>`
+Directive | `ang g directive <name> `
+Service | `ang g service <name>`
+Filter | `ang g fiter <name>`
+Config | `ang g config <name>`
+Module | `ang g module <name>`
 
+angularjs-cli 将会把生成的`controllers`， `directives`， `services`， `filters`，  `configs` 自动的添加到 `app/app-config` 文件夹中的相应文件中。如果你需要添加到其他的模块中，请按照以下步骤进行：
+ 1. `ng g module new-module` 创建一个新的模块
+ 2.  执行 `ng g controller module/new-module/new-controller`
+
+新创建的 `controllers`， `directives`， `services`， `filters`， `configs` 将会被添加到你新创建的模块的`new-module/config` 文件夹中的相应文件中。你需要手动的引入这个模块到 `src/app/app-router.js` ，如果你有其他的文件要随此文件一并加载，一可以在 `new-module/module-main.js` 文件中通过 `import`引入这些文件。
+在`src/app/app-router.js`中，你可以按照文件中的注释配置路由和懒加载。
+
+### 打包
+
+```bash
+ang build
 ```
-ang g c module/myModule/myController
-```
-在`src/app/module/my-module`文件夹下生成`my-controller.js`，并添加一个名`myController`的`controller`；此controller将随此模块一并加载到文件中；如有随此模块一并引入的其他文件，通过`import`添加到`src/app/module/my-module/module-import.js`文件中，此文件需以懒加载分方式手动注入到路由配置中；
 
+## 规划
+* 升级 `angularjs` 到最新的版本；
+* 支持 `component`；
+* 优化 `webpack` 配置；
+* 提供配置文件 `angularjs-cli.json`；
 
-在`src/app/app-router.js中`配置路由，如懒加载模块，按照文件中注释的引入方式配置即可；
+## 许可证
+MIT
 
-### 规划
-* 未来将会对此脚手架升级到最新版`angularJs`；
-* 支持`component`；
-* 优化`webpack`配置；
-* 提供配置文件`angularjs-cli.json`;
