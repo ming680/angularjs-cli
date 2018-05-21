@@ -1,4 +1,4 @@
-## Angular CLI
+## angularjs-cli
 
 [![npm](https://img.shields.io/npm/v/angular1.x-cli.svg?style=flat)](https://www.npmjs.com/package/angular1.x-cli?activeTab=versions)
 
