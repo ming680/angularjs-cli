@@ -54,8 +54,8 @@ Config | `ang g config <name>`
 Module | `ang g module <name>`
 
 angularjs-cli 将会把生成的`controllers`， `directives`， `services`， `filters`，  `configs` 自动的添加到 `app/app-config` 文件夹中的相应文件中。如果你需要添加到其他的模块中，请按照以下步骤进行：
- 1. `ng g module new-module` 创建一个新的模块
- 2.  执行 `ng g controller module/new-module/new-controller`
+ 1. `ang g module new-module` 创建一个新的模块
+ 2.  执行 `ang g controller module/new-module/new-controller`
 
 新创建的 `controllers`， `directives`， `services`， `filters`， `configs` 将会被添加到你新创建的模块的`new-module/config` 文件夹中的相应文件中。你需要手动的引入这个模块到 `src/app/app-router.js` ，如果你有其他的文件要随此文件一并加载，一可以在 `new-module/module-main.js` 文件中通过 `import`引入这些文件。
 在`src/app/app-router.js`中，你可以按照文件中的注释配置路由和懒加载。

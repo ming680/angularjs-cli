@@ -55,8 +55,8 @@ Module | `ang g module <name>`
 
 angularjs-cli will add reference to `controllers`, `directives`, `services`, `filters`, and `configs` automatically in the `app/app-config`. If you need to add this references to another custom module, follow this steps:
 
- 1. `ng g module new-module` to create a new module
- 2.  call `ng g controller module/new-module/new-controller`
+ 1. `ang g module new-module` to create a new module
+ 2.  call `ang g controller module/new-module/new-controller`
 
 This should add the new `controllers`, `directives`, `services`, `filters`, and `configs`  reference to the `new-module/config` you've created.
 You need to manually introduce this module to `src/app/app-router.js`.
