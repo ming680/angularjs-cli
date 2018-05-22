@@ -1,8 +1,9 @@
 ## angularjs-cli
 
 [![npm](https://img.shields.io/npm/v/angular1.x-cli.svg?style=flat)](https://www.npmjs.com/package/angular1.x-cli?activeTab=versions)
+[![npm](https://img.shields.io/npm/dt/angular1.x-cli.svg)](https://www.npmjs.com/package/angular1.x-cli?activeTab=versions)
 
-[Engulish](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README.md)
+[English](https://github.com/xuMINGzhi9/angularjs-cli/blob/master/README.md)
 
 ## 介绍
 
